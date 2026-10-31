@@ -1,0 +1,40 @@
+name: Bug Report
+description: Report an issue with an application or catalogue tool.
+title: "[BUG]: <Short summary of issue>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide detailed information to help diagnose and resolve the issue.
+  - type: input
+    id: app_id
+    attributes:
+      label: Application ID / Tool Name
+      placeholder: e.g. com.example.calc or tools/validate_apps.py
+    validations:
+      required: true
+  - type: input
+    id: atlas_version
+    attributes:
+      label: ATLAS OS Version / Hardware Target
+      placeholder: e.g. ATLAS OS v1.0.0 (ESP32-S3 DevKitC-1 N16R8)
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Serial Console Logs / Error Trace
+      render: shell

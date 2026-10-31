@@ -1,0 +1,66 @@
+name: Application Submission
+description: Submit a new application to the ATLAS Community Application Catalogue.
+title: "[APP]: <Application Name>"
+labels: ["application", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing an application to the ATLAS ecosystem!
+        Before submitting, ensure you have validated your manifest with `python tools/validate_apps.py`.
+  - type: input
+    id: app_name
+    attributes:
+      label: Application Display Name
+      placeholder: e.g. QuickCalc
+    validations:
+      required: true
+  - type: input
+    id: app_id
+    attributes:
+      label: Application ID
+      description: Unique reverse-DNS identifier (max 31 characters, alphanumeric, dot, dash, underscore only).
+      placeholder: e.g. com.example.quickcalc
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Target Runtime
+      options:
+        - wasm
+        - native
+        - python
+        - lua
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief overview of what this application does and hardware peripherals it uses.
+    validations:
+      required: true
+  - type: input
+    id: repo_url
+    attributes:
+      label: Source Repository URL
+      placeholder: https://github.com/username/repository
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety_affirmation
+    attributes:
+      label: Safety & Policy Affirmation
+      options:
+        - label: This application does NOT contain or submit raw ESP-IDF firmware binaries (.bin) designed to replace ATLAS OS partitions.
+          required: true
+        - label: The manifest adheres to schema/manifest.schema.json and passed local validation.
+          required: true

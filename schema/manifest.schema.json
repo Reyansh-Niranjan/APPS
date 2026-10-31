@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ATLAS Application Manifest Schema",
+  "description": "Formal specification for ATLAS application manifests. Note: Core fields (app_id, name, version, runtime, entrypoint) are consumed by the ATLAS OS Application Manager; metadata fields are reserved for the APPS catalogue and package manager.",
+  "type": "object",
+  "required": [
+    "app_id",
+    "name",
+    "version",
+    "runtime",
+    "entrypoint"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "app_id": {
+      "type": "string",
+      "description": "Unique application identifier (reverse domain notation recommended, max 31 characters).",
+      "maxLength": 31,
+      "pattern": "^[a-zA-Z0-9._-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable application display name (max 31 characters).",
+      "minLength": 1,
+      "maxLength": 31
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version string (e.g., '1.0.0').",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$",
+      "maxLength": 15
+    },
+    "tagline": {
+      "type": "string",
+      "description": "Short summary displayed on home launcher cards (max 47 characters).",
+      "maxLength": 47
+    },
+    "runtime": {
+      "type": "string",
+      "description": "Execution runtime environment. 'wasm' indicates WebAssembly bytecode; 'native' indicates relocatable native module. Note: 'builtin' is reserved for core firmware applications.",
+      "enum": ["wasm", "native", "python", "lua"]
+    },
+    "entrypoint": {
+      "type": "string",
+      "description": "Relative path to executable or main script inside package directory. Path traversal ('..'), absolute paths, and colons are forbidden.",
+      "pattern": "^(?!.*\\.\\.)[^/\\\\:][^\\\\:]*$",
+      "maxLength": 63
+    },
+    "description": {
+      "type": "string",
+      "description": "Extended application description for catalogue and store listings."
+    },
+    "author": {
+      "type": "string",
+      "description": "Developer or organization name / handle."
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier (e.g., 'MIT', 'Apache-2.0', 'GPL-3.0-only')."
+    },
+    "min_atlas_version": {
+      "type": "string",
+      "description": "Minimum ATLAS OS version required to run this application."
+    },
+    "icon": {
+      "type": "string",
+      "description": "Relative path to application icon file (e.g., 'icon.png' or 'icon.raw').",
+      "maxLength": 63
+    },
+    "categories": {
+      "type": "array",
+      "description": "Tags or categories for discovery.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permissions": {
+      "type": "array",
+      "description": "System resources requested by this application.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "display",
+          "input",
+          "audio_tx",
+          "audio_rx",
+          "storage_app",
+          "storage_shared",
+          "network"
+        ]
+      }
+    },
+    "repository": {
+      "type": "string",
+      "description": "URL to source repository.",
+      "format": "uri"
+    }
+  }
+}
