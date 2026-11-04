@@ -1,0 +1,19 @@
+{
+  "app_id": "org.atlas.store",
+  "name": "APKG Store",
+  "version": "1.0.0",
+  "tagline": "Install & Manage Packages",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "On-device package manager and store for discovering, installing, and managing native applications on ATLAS OS.",
+  "author": "Atlas Core Team",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input",
+    "audio_tx",
+    "storage_app",
+    "storage_shared"
+  ]
+}
+

@@ -1,0 +1,18 @@
+{
+  "app_id": "org.atlas.settings",
+  "name": "Settings",
+  "version": "1.0.0",
+  "tagline": "System & Telemetry Settings",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "System configuration and hardware telemetry app. Manages master audio volume, UI sound FX, display themes, SD storage, and OTA diagnostics.",
+  "author": "Atlas Core Team",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input",
+    "audio_tx",
+    "storage_app"
+  ]
+}
+

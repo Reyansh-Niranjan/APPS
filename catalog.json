@@ -1,5 +1,72 @@
 {
   "version": 1,
-  "total_applications": 0,
-  "applications": []
+  "total_applications": 6,
+  "applications": [
+    {
+      "app_id": "org.atlas.calc",
+      "name": "Scientific Calc",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Atlas Core Team",
+      "tagline": "Math & Trig Engine",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.calc",
+      "manifest_url": "apps/org.atlas.calc/manifest.json"
+    },
+    {
+      "app_id": "org.atlas.invaders",
+      "name": "Space Invaders",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Retro Lab",
+      "tagline": "Retro Arcade Game",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.invaders",
+      "manifest_url": "apps/org.atlas.invaders/manifest.json"
+    },
+    {
+      "app_id": "org.atlas.notes",
+      "name": "QuickNotes",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Atlas Core Team",
+      "tagline": "Text Editor & Scratchpad",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.notes",
+      "manifest_url": "apps/org.atlas.notes/manifest.json"
+    },
+    {
+      "app_id": "org.atlas.settings",
+      "name": "Settings",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Atlas Core Team",
+      "tagline": "System & Telemetry Settings",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.settings",
+      "manifest_url": "apps/org.atlas.settings/manifest.json"
+    },
+    {
+      "app_id": "org.atlas.store",
+      "name": "APKG Store",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Atlas Core Team",
+      "tagline": "Install & Manage Packages",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.store",
+      "manifest_url": "apps/org.atlas.store/manifest.json"
+    },
+    {
+      "app_id": "org.atlas.synth",
+      "name": "Chiptune Synth",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Atlas Audio Lab",
+      "tagline": "I2S Wave Synthesizer",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.synth",
+      "manifest_url": "apps/org.atlas.synth/manifest.json"
+    }
+  ]
 }

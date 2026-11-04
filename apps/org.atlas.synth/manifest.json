@@ -1,0 +1,17 @@
+{
+  "app_id": "org.atlas.synth",
+  "name": "Chiptune Synth",
+  "version": "1.0.0",
+  "tagline": "I2S Wave Synthesizer",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "Live 8-bit sound synthesizer using MAX98357A I2S DAC with square/sawtooth waveforms and real-time frequency modulation.",
+  "author": "Atlas Audio Lab",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input",
+    "audio_tx"
+  ]
+}
+

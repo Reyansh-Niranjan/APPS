@@ -1,0 +1,17 @@
+{
+  "app_id": "org.atlas.invaders",
+  "name": "Space Invaders",
+  "version": "1.0.0",
+  "tagline": "Retro Arcade Game",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "Classic 60 FPS arcade space shooter with joystick control, laser firing, alien collision detection, and retro audio sound effects.",
+  "author": "Retro Lab",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input",
+    "audio_tx"
+  ]
+}
+

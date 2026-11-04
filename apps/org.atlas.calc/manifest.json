@@ -1,0 +1,16 @@
+{
+  "app_id": "org.atlas.calc",
+  "name": "Scientific Calc",
+  "version": "1.0.0",
+  "tagline": "Math & Trig Engine",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "High-precision scientific calculator with trigonometry, logarithms, exponential functions, and floating-point math.",
+  "author": "Atlas Core Team",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input"
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "app_id": "org.atlas.notes",
+  "name": "QuickNotes",
+  "version": "1.0.0",
+  "tagline": "Text Editor & Scratchpad",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "Lightweight notepad and system scratchpad for quick memos and hardware notes.",
+  "author": "Atlas Core Team",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input",
+    "storage_app"
+  ]
+}
+
