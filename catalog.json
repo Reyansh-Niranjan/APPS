@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "total_applications": 6,
+  "total_applications": 7,
   "applications": [
+    {
+      "app_id": "org.atlas.assistant",
+      "name": "Gemini Live",
+      "version": "1.0.0",
+      "runtime": "native",
+      "author": "Atlas AI Team",
+      "tagline": "Gemini 3.8 Extended Thinking AI",
+      "entrypoint": "app.bin",
+      "path": "apps/org.atlas.assistant",
+      "manifest_url": "apps/org.atlas.assistant/manifest.json"
+    },
     {
       "app_id": "org.atlas.calc",
       "name": "Scientific Calc",

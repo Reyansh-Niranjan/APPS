@@ -1,0 +1,18 @@
+{
+  "app_id": "org.atlas.assistant",
+  "name": "Gemini Live",
+  "version": "1.0.0",
+  "tagline": "Gemini 3.8 Extended Thinking AI",
+  "runtime": "native",
+  "entrypoint": "app.bin",
+  "description": "Real-time voice and reasoning AI communicator powered by Google Gemini 3.8 Flash. Features dual-pane thinking inspector and matrix answer terminal with push-to-talk voice capture.",
+  "author": "Atlas AI Team",
+  "license": "MIT",
+  "permissions": [
+    "display",
+    "input",
+    "audio_tx",
+    "audio_rx",
+    "network"
+  ]
+}

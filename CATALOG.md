@@ -8,6 +8,7 @@ This catalogue is automatically generated from verified manifests in [`apps/`](a
 
 | Application | ID | Version | Runtime | Author | Status | Description |
 |---|---|---|---|---|---|---|
+| **[Gemini Live](apps/org.atlas.assistant)** | `org.atlas.assistant` | `v1.0.0` | `native` | Atlas AI Team | Verified | Gemini 3.8 Extended Thinking AI |
 | **[Scientific Calc](apps/org.atlas.calc)** | `org.atlas.calc` | `v1.0.0` | `native` | Atlas Core Team | Verified | Math & Trig Engine |
 | **[Space Invaders](apps/org.atlas.invaders)** | `org.atlas.invaders` | `v1.0.0` | `native` | Retro Lab | Verified | Retro Arcade Game |
 | **[QuickNotes](apps/org.atlas.notes)** | `org.atlas.notes` | `v1.0.0` | `native` | Atlas Core Team | Verified | Text Editor & Scratchpad |
