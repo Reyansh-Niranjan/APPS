@@ -105,7 +105,7 @@ Applications must include a `manifest.json` file conforming to [`schema/manifest
 
 ## 5. Browsing the Catalogue
 
-- **Human-readable catalogue:** Inspect [`CATALOG.md`](CATALOG.md) for a summary table of applications, versions, and runtimes.
+- **Human-readable catalogue:** Inspect [`CATALOG.md`](CATALOG.md) for a summary table of available applications and runtimes.
 - **Machine-readable catalogue:** Applications, store clients, and package managers can consume [`catalog.json`](catalog.json) directly without cloning the repository.
 
 ---
@@ -121,7 +121,7 @@ We welcome contributions from the embedded and retro-handheld community!
    ```bash
    python tools/validate_apps.py
    ```
-5. Commit, push, and open a Pull Request.
+5. Commit your changes and open a Pull Request.
 
 Detailed instructions can be found in [CONTRIBUTING.md](CONTRIBUTING.md).
 

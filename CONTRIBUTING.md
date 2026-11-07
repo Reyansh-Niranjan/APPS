@@ -1,8 +1,8 @@
 # Contributing to the ATLAS Application Ecosystem
 
-Welcome to the **ATLAS APPS** community repository!
+Official community application repository for ATLAS OS.
 
-This document outlines how to create, test, and submit applications for the **ATLAS OS** ecosystem.
+This guide covers building and submitting applications for the **ATLAS OS** ecosystem.
 
 ---
 

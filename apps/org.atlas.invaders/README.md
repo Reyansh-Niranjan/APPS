@@ -6,7 +6,7 @@ Playable 60 FPS retro arcade shooter for **ATLAS OS**.
 - Full 60 FPS arcade rendering on 320x240 LCD using hardware SPI GDMA.
 - Laser cannon control with ADC1 joystick.
 - Audio sound effects for laser firing and alien explosions.
-- Alien wave marching, edge bouncing, descent, and score tracking.
+- Alien wave marching, edge bouncing, and downward advance with score tracking.
 
 ## Controls
 - **Joystick LEFT / RIGHT:** Move defense cannon.

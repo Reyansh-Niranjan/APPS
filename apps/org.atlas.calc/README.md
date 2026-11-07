@@ -3,7 +3,7 @@
 Official scientific calculator application for **ATLAS OS**.
 
 ## Overview
-Interactive calculator featuring standard arithmetic, trigonometry, and scientific constants with zero execution overhead.
+Interactive calculator supporting basic arithmetic and trigonometric calculations.
 
 ## Controls
 - **Joystick:** Navigate keypad.

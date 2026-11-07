@@ -3,9 +3,9 @@
 Official on-device application manager and store for **ATLAS OS**.
 
 ## Overview
-- Discover, browse, inspect, install, and uninstall applications directly from the ATLAS handheld terminal.
-- Live storage free space monitoring and installed application badges.
-- Native execution on Xtensa LX7 dual-core silicon with 0% performance degradation.
+- Browse and manage applications on the ATLAS handheld terminal.
+- Live storage monitoring and installed application badges.
+- Native execution on the Xtensa LX7 processor.
 
 ## Controls
 - **Joystick UP / DOWN:** Navigate through catalogue applications.
